@@ -78,7 +78,7 @@ function addnumbers(a, b) {
   let result = a + b;
 
   calculationfunc({
-    operation: "+",
+    operation: "Addition (+) ",
     operands: a + ", " + b,
     result: result,
   });
@@ -90,7 +90,7 @@ function subtractnumber(a, b) {
   let result = a - b;
 
   calculationfunc({
-    operation: "-",
+    operation: "Subtraction (-)",
     operands: a + ", " + b,
     result: result,
   });
@@ -102,7 +102,7 @@ function dividenumber(a, b) {
   let result = a / b;
 
   calculationfunc({
-    operation: "/",
+    operation: "Division (/)",
     operands: a + ", " + b,
     result: result,
   });
@@ -114,7 +114,7 @@ function multiplynumbers(a, b) {
   let result = a * b;
 
   calculationfunc({
-    operation: "*",
+    operation: "Multiplication (*)",
     operands: a + ", " + b,
     result: result,
   });
