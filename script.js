@@ -42,7 +42,7 @@ function calchistory() {
     checkhistorystate = true;
   } else {
     paracalchistory.innerHTML = "";
-    btnhistory.textContent = "View Calculation History";
+    btnhistory.textContent = "View History";
     checkhistorystate = false;
   }
 }

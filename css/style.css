@@ -1,11 +1,12 @@
+body{
+  background: #C9CCD3;
+}
 #grid-container {
   /* display: flex;
     flex-wrap: wrap; */
 }
 
-
-
-#headingtagsdiv{
+#headingtagsdiv {
   /* display: flex;
   flex-wrap: wrap;  */
   align-items: center;
@@ -13,14 +14,13 @@
   background-color: black;
 }
 
-#headingtagsdiv h1{
+#headingtagsdiv h1 {
   color: white;
 }
 
-#headingtagsdiv h2{
-color: red;
+#headingtagsdiv h2 {
+  color: red;
 }
-
 
 #headingtagsdiv {
   font-size: 15px;
@@ -50,7 +50,21 @@ color: red;
   flex: 1;
   padding: 15px 10px;
   font-size: 20px;
+  background-color: rgb(253, 251, 246);
+  color: black;
+  border: 20ex;
+  border-radius: 15px;
   
+}
+
+#calcalculatorarea, select:hover{
+  
+  border-color: red;
+}
+
+#calcalculatorarea, input:hover{
+  
+  border-color: red;
 }
 
 input::placeholder {
@@ -61,23 +75,39 @@ input::placeholder {
 
 #calculatorarea input[type="button"],
 #calculatorarea button {
-  padding: 15px 10px;
+  padding: 15px 30px;
   font-size: 16px;
+  
 }
 
-#btn1{
-    background-color: green;
-    color: black;
+#btn1 {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
 }
 
-#btncheckhist{
-background-color: blue;
+#btn1:hover{
+background-color: red;
 color: black;
+}
+
+#btncheckhist {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+#btncheckhist:hover{
+ background-color: red;
+  color: black;
+  
 }
 
 #calculationhistory {
   font-style: italic;
-  color: purple;
+  color: red;
   font-size: 25px;
 }
 
@@ -112,19 +142,20 @@ color: black;
   font-weight: bold;
 }
 
-#footer{
-  position:fixed;
-   left:0px;
-   bottom:0px;
-   height:50px;
-   width:100%;
-   background:black;
-   text-align: center;
-   
+#footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: black;
+  text-align: center;
 }
 
-#footer p{
+#footer p {
   color: white;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
+
+
