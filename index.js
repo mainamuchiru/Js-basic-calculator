@@ -9,21 +9,7 @@ const terminalinputmess =
 console.log(displaymessage);
 
 const calculationhistory = [];
-const calchistoryobj = {};
 
-calchistoryobj.operation = "+";
-calchistoryobj.operands = "8,9";
-calchistoryobj.result = "hello";
-
-calchistoryobj.operation = "-";
-calchistoryobj.operands = "8,9";
-calchistoryobj.result = "hellllo";
-
-calchistoryobj.operation = "-";
-calchistoryobj.operands = "8,9";
-calchistoryobj.result = "hello";
-
-console.log(calchistoryobj);
 
 
 const { debug } = require("console");
@@ -34,7 +20,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-//terminalinput();
+terminalinput();
 
 function terminalinput() {
   console.log(terminalinputmess);
