@@ -1,3 +1,4 @@
+//Declared variables that fetch elements by id from Html page (calc.html)
 const btncalculate = document.getElementById("btn1");
 const paracalc = document.getElementById("outputArea");
 const parainvalid = document.getElementById("invalidtxt");
