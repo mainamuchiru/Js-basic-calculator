@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Maina's calculator</title>
+  </head>
+  <body>
+    <div id="grid-container">
+      <div id="headingtagsdiv">
+        <h1>Welcome to the My calculator Made by Maina</h1>
+
+        <h2>
+          Insttructions: Key in two numbers in the two textboxes, then select an
+          arithmeric operator from the dropdown list.
+        </h2>
+      </div>
+      <div id="calculatorarea">
+        <div class="input-group">
+          <label for="numberone">Enter number:</label>
+          <input
+            type="number"
+            id="firsttxtbox"
+            placeholder="Enter first number"
+          />
+        </div>
+        <div class="input-group">
+          <label for="numbertwo">Enter number:</label>
+          <input
+            type="number"
+            id="secondtxtbox"
+            placeholder="Enter second number"
+          />
+        </div>
+        <div class="input-group">
+          <label for="Arithmetic Operator">Choose operator:</label>
+          <select id="arithmeticoperator">
+            <option value="multiplication">Multiply: *</option>
+            <option value="addition">Add: +</option>
+            <option value="division">Divide: /</option>
+            <option value="subtraction">Subtract: -</option>
+          </select>
+        </div>
+        <input type="button" id="btn1" value="Calculate" />
+        <button id="btncheckhist">View History</button>
+      </div>
+
+      <div id="invalidarea">
+        <div><p id="invalidtxt"></p></div>
+      </div>
+      <div id="resultoutput">
+        <div><p id="outputArea"></p></div>
+      </div>
+      <div id="historysection">
+        <p id="calculationhistory"></p>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

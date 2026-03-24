@@ -1,0 +1,94 @@
+#grid-container {
+  /* display: flex;
+    flex-wrap: wrap; */
+}
+
+#headingtagsdiv {
+  font-size: 15px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#calculatorarea {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1 1 300px;
+}
+
+#calculatorarea input[type="number"],
+#calculatorarea select {
+  flex: 1;
+  padding: 15px 10px;
+  font-size: 16px;
+  
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 50;
+  opacity: 1;
+}
+
+#calculatorarea input[type="button"],
+#calculatorarea button {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+#btn1{
+    background-color: green;
+    color: black;
+}
+
+#btncheckhist{
+background-color: blue;
+color: black;
+}
+
+#calculationhistory {
+  font-style: italic;
+  color: purple;
+  font-size: 25px;
+}
+
+#invalidarea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#resultoutput {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  height: 100px;
+}
+
+#outputArea {
+  font-size: 25px;
+}
+
+#invalidtxt {
+  font-size: 25px;
+  color: red;
+}
+
+#outputArea::before {
+  content: "Result is: ";
+  font-weight: bold;
+}
