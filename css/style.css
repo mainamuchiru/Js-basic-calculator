@@ -3,6 +3,25 @@
     flex-wrap: wrap; */
 }
 
+
+
+#headingtagsdiv{
+  /* display: flex;
+  flex-wrap: wrap;  */
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#headingtagsdiv h1{
+  color: white;
+}
+
+#headingtagsdiv h2{
+color: red;
+}
+
+
 #headingtagsdiv {
   font-size: 15px;
   font-family:
@@ -30,7 +49,7 @@
 #calculatorarea select {
   flex: 1;
   padding: 15px 10px;
-  font-size: 16px;
+  font-size: 20px;
   
 }
 
@@ -91,4 +110,21 @@ color: black;
 #outputArea::before {
   content: "Result is: ";
   font-weight: bold;
+}
+
+#footer{
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   background:black;
+   text-align: center;
+   
+}
+
+#footer p{
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }

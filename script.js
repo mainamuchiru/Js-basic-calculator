@@ -16,10 +16,12 @@ function calculationfunc(user) {
 
 //function that calculates history
 function calchistory() {
+  const calcobjreversed = calculationobject.toReversed();
+
   if (!checkhistorystate) {
     paracalchistory.innerHTML = "";
 
-    calculationobject.forEach((item) => {
+    calcobjreversed.forEach((item) => {
       const entry = document.createElement("div");
 
       entry.textContent =
@@ -49,16 +51,25 @@ function mainfunctioncontrol() {
   let firstnumbertxtbox = document.getElementById("firsttxtbox").value;
   let secondnumbertxtbox = document.getElementById("secondtxtbox").value;
   let arithmeticselect = document.getElementById("arithmeticoperator").value;
+  //alert(arithmeticselect)
+
   if (firstnumbertxtbox == "" || secondnumbertxtbox == "") {
     parainvalid.innerHTML = "Enter numbers!";
-  } else {
-    parainvalid.innerHTML = "";
-    operationworkhere(
-      parseInt(firstnumbertxtbox),
-      arithmeticselect,
-      parseInt(secondnumbertxtbox),
-    );
+    return;
   }
+
+  if (arithmeticselect == "division" && secondnumbertxtbox == "0") {
+    console.log(arithmeticselect);
+    parainvalid.innerHTML = "Error, cannot divide by zero";
+    return;
+  }
+
+  parainvalid.innerHTML = "";
+  operationworkhere(
+    parseInt(firstnumbertxtbox),
+    arithmeticselect,
+    parseInt(secondnumbertxtbox),
+  );
 }
 //Functions for Arithmetic operators
 
