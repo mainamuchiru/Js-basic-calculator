@@ -8,6 +8,7 @@ btncalculate.addEventListener("click", mainfunctioncontrol);
 btnhistory.addEventListener("click", calchistory);
 const calculationobject = [];
 let checkhistorystate = false;
+const calchistoryobj = []
 
 //Stores calculations in an array
 function calculationfunc(user) {
@@ -24,7 +25,9 @@ function calchistory() {
 
     calcobjreversed.forEach((item) => {
       const entry = document.createElement("div");
-
+      calchistoryobj.push(item)
+      console.log("calc history hereeeee")
+      console.log(calchistoryobj)
       entry.textContent =
         "[" +
         item.time +
